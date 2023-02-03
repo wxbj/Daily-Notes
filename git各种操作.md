@@ -1,6 +1,6 @@
 1. 查看git的配置文件列表：git config --list --show-origin  
 2. 修改用户名和邮箱：git config --global user.name "John Doe"  
-				   git config --global user.email xx@xx.com
+                    git config --global user.email xx@xx.com
 3. 配置编辑器：git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"  
 4. 查看配置信息：git config --list  
 5. 获得指定关键字的帮助：git help verb  
@@ -18,7 +18,7 @@
 	* -p 按补丁格式显示每个提交引入的差异。  
 	* --stat 显示每次提交的文件修改统计信息。  
 	* --shortstat 只显示 --stat 中最后的行数修改添加移除统计。  
-    * --name-only 仅在提交信息后显示已修改的文件清单。  
+        * --name-only 仅在提交信息后显示已修改的文件清单。  
 	* --name-status 显示新增、修改、删除的文件清单。  
 	* --abbrev-commit 仅显示 SHA-1 校验和所有 40 个字符中的前几个字符。  
 	* --relative-date 使用较短的相对时间而不是完整格式显示日期（比如“2 weeks ago”）。  
@@ -32,7 +32,7 @@
 	* --until, --before 仅显示指定时间之前的提交。  
 	* --author 仅显示作者匹配指定字符串的提交。  
 	* --committer 仅显示提交者匹配指定字符串的提交。  
-    * --grep 仅显示提交说明中包含指定字符串的提交。  
+        * --grep 仅显示提交说明中包含指定字符串的提交。  
 	* -S 仅显示添加或删除内容匹配指定字符串的提交。  
 	* format参数说明：  
 		* %H 提交的完整哈希值  
@@ -76,10 +76,6 @@
 39. 合并分支：git merge hotfix  
 40. 删除分支：git branch -d hotfix  
 41. 已经合并的分支：git branch --merged或--no-merged还没合并的分支  
-
-
-
-
 
 
 
