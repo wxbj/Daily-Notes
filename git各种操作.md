@@ -72,8 +72,10 @@
 35、别名：git config --global alias.co checkout
 36、分支创建：git branch testing
 37、查看各个分支当前所指的对象：git log --oneline --decorate
-38、分支切换：git checkout testing
-
+38、分支切换：git checkout testing -b创建并切换
+39、合并分支：git merge hotfix
+40、删除分支：git branch -d hotfix
+41、已经合并的分支：git branch --merged或--no-merged还没合并的分支
 
 
 
