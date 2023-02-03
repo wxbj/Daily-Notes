@@ -43,10 +43,10 @@
 	       | Header      | Title       |
 	       | Paragraph   | Text        |
 	    2. 对其方式
-	    	| Syntax      | Description | Test Text     |
-			| :---        |    :----:   |          ---: |
-			| Header      | Title       | Here's this   |
-			| Paragraph   | Text        | And more      |
+	       | Syntax    | Description | Test Text  |
+		   | :---      |    :----:   |        ---:|
+		   | Header    | Title       | Here's this|
+		   | Paragraph | Text        | And more   |
 ## 十四、 围栏代码块
 		1. '''+代码块+'''
 		2. 语法高亮：'''语言名+代码块+'''
