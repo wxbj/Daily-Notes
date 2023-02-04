@@ -1,4 +1,10 @@
-## 一、复制、粘贴及其他常规的键盘快捷方式
+# 目录
+&emsp;&emsp;&emsp;&emsp;[一、复制、粘贴及其他常规的键盘快捷方式](#1)  
+&emsp;&emsp;&emsp;&emsp;[二、Windows 徽标键键盘快捷方式](#2)  
+&emsp;&emsp;&emsp;&emsp;[三、文件资源管理器键盘快捷方式](#3)  
+&emsp;&emsp;&emsp;&emsp;[四、虚拟桌面的键盘快捷方式](#4)  
+&emsp;&emsp;&emsp;&emsp;[五、设置键盘快捷方式](#5)
+## 一、复制、粘贴及其他常规的键盘快捷方式<span id="1">
 1. 复制: Ctrl + C
 2. 剪切: Ctrl + X
 3. 粘贴: Ctrl + V
@@ -32,7 +38,7 @@
 31. 停止当前任务: Esc
 32. 整个屏幕截图并将其复制到剪贴板: PrtScn
 
-## 二、Windows 徽标键键盘快捷方式
+## 二、Windows 徽标键键盘快捷方式<span id="2">
 1. 开始菜单: Windows
 2. 打开快速设置: Windows + A
 3. 查看隐藏的应用: Windows + B
@@ -65,7 +71,7 @@
 30. 将全屏屏幕截图保存到文件: Windows + PrtScn
 31. 轮询各菜单: Fn+Tab
 
-## 三、文件资源管理器键盘快捷方式
+## 三、文件资源管理器键盘快捷方式<span id="3">
 1. 选择地址栏: Alt + D
 2. 选择搜索框: Ctrl + F
 3. 打开新窗口: Ctrl + N
@@ -77,11 +83,11 @@
 9. 查看上一个文件夹: Alt + ←
 10. 最大化或最小化活动窗口: F11
 
-## 四、虚拟桌面的键盘快捷方式
+## 四、虚拟桌面的键盘快捷方式<span id="4">
 1. 添加虚拟桌面: Windows + Ctrl + D
 2. 切换虚拟界面: Windows + Ctrl + →/←
 3. 关闭当前虚拟桌面: Windows + Ctrl + F4
 
-## 五、设置键盘快捷方式
+## 五、设置键盘快捷方式<span id="5">
 1. 打开设置: Windows + I
 2. 返回到设置主页: Backspace
