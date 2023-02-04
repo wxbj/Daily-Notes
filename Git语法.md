@@ -1,10 +1,21 @@
-## 一、配置相关
+# 目录
+&emsp;&emsp;&emsp;&emsp;[一、配置相关](#1)  
+&emsp;&emsp;&emsp;&emsp;[二、本地仓库相关](#2)  
+&emsp;&emsp;&emsp;&emsp;[三、远程仓库相关](#3)  
+&emsp;&emsp;&emsp;&emsp;[四、 分支相关](#4)  
+&emsp;&emsp;&emsp;&emsp;[五、 提交历史相关](#5)  
+&emsp;&emsp;&emsp;&emsp;[六、 标签相关](#6)  
+&emsp;&emsp;&emsp;&emsp;[七、 冲突相关](#7)  
+&emsp;&emsp;&emsp;&emsp;[八、 其他](#8)  
+
+
+## 一、配置相关<span id="1">
 		1. 查看git的配置文件列表: git config --list --show-origin
 		2. 修改用户名:  git config --global user.name  用户名
 		3. 修改邮箱: git config --global user.email 邮箱地址
 		4. 配置编辑器: git config --global core.editor "编辑器地址 -multiInst -notabbar -nosession -noPlugin"
 		5. 设置别名: git config --global alias.co checkout
-## 二、本地仓库相关
+## 二、本地仓库相关<span id="2">
 		1. 初始化仓库: git init
 		2. 检查当前文件状态: git status
 		3. 添加追踪文件或将已经跟踪的文件放到暂存区: git add 文件名
@@ -34,7 +45,7 @@
 		24. 展示所有tracked的文件: git ls-files -t
 		25. 展示所有untracked的文件: git ls-files --others
 		26. 展示所有忽略的文件: git ls-files --others -i --exclude-standard
-## 三、远程仓库相关
+## 三、远程仓库相关<span id="3">
 		1. 克隆远程仓库并重命名: git clone 远程仓库地址 新的仓库名
 		2. 列出所有远程仓库: git remote
 		3. 查看远程仓库: git remote 仓库名
@@ -48,7 +59,7 @@
 		11. 从远程仓库更新本地库: git fetch 仓库名
 		12. 抛弃本地所有的修改,回到远程仓库的状态: git reset --hard  仓库名/分支名
 		13. 列出所有远程分支: git branch -r
-## 四、 分支相关
+## 四、 分支相关<span id="4">
 		1. 分支创建: git branch 分支名
 		2. 删除分支: git branch -d 分支名
 		3. 查看已经合并的分支: git branch --merged
@@ -64,7 +75,7 @@
 		13. 合并分支: git merge 分支名
 		14. 远程删除了分支本地也想删除: git remote prune 仓库名
 		15. 把A分支的某一个commit,放到B分支上: git cherry-pick commit-id
-## 五、 提交历史相关
+## 五、 提交历史相关<span id="5">
 		1. 查看提交历史: git log
 		2. 按补丁格式显示每个提交引入的差异: git log -p
 		3. 显示每次提交的文件修改统计信息: git log --stat
@@ -103,7 +114,7 @@
 		21. 查看某段代码是谁写的: git blame 文件名
 		22. 显示本地更新过HEAD的git命令记录: git reflog
 		23. 查看两个星期内的改动: git whatchanged --since='2 weeks ago'
-## 六、 标签相关
+## 六、 标签相关<span id="6">
 		1. 列出标签:  git tag  
 		2. 附注标签: git tag -a 标签名 -m "标签描述"
 		3. 查看标签信息: git show 标签名
@@ -118,12 +129,12 @@
 		12. 查看标签的文件属性: git checkout 标签名
 		13. 切回到某个标签: git checkout -b 分支名 标签名
 		14. 展示当前分支的最近的标签: git describe --tags --abbrev=0
-## 七、 冲突相关
+## 七、 冲突相关<span id="7">
 		1. 查看工作目录和暂存区文件的区别: git diff
 		2. 查看暂存区和仓库中文件的区别: git diff  --cached
 		3. 展示工作区的冲突文件列表: git diff --name-only --diff-filter=U
 		4. 展示本地仓库中任意两个commit之间的文件变动: git diff commit1-id commit2-id
 		5. 输出工作区、暂存区、本地最近的版本不同: git diff HEAD
-## 八、 其他
+## 八、 其他<span id="8">
 		1. 获得指定关键字的帮助信息: git help 关键字
 		2. 展示帮助信息: git help -g

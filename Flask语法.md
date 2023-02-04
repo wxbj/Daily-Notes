@@ -1,39 +1,61 @@
-# 1、初识Flask
+# 目录
+&emsp;&emsp;&emsp;&emsp;[1、初识Flask](#1)  
+&emsp;&emsp;&emsp;&emsp;[2.Response三剑客](#2)  
+&emsp;&emsp;&emsp;&emsp;[3.Flask中的Request公共变量？](#3)  
+&emsp;&emsp;&emsp;&emsp;[4.Jinja2](#4)  
+&emsp;&emsp;&emsp;&emsp;[5.Session](#5)  
+&emsp;&emsp;&emsp;&emsp;[6.Flask 中的路由](#6)  
+&emsp;&emsp;&emsp;&emsp;[7.Flask中的实例化配置](#7)  
+&emsp;&emsp;&emsp;&emsp;[8.app对象配置](#8)  
+&emsp;&emsp;&emsp;&emsp;[9.蓝图 Blueprint](#9)  
+&emsp;&emsp;&emsp;&emsp;[10.特殊装饰器：](#10)  
+&emsp;&emsp;&emsp;&emsp;[11.CBV :](#11)  
+&emsp;&emsp;&emsp;&emsp;[12.flash:](#12)  
+&emsp;&emsp;&emsp;&emsp;[13.Flask-Session](#13)  
+&emsp;&emsp;&emsp;&emsp;[14.WTForms - MoudelForm](#14)  
+
+
+## 1、初识Flask<span id="1">
     from flask import Flask  
     app = Flask(__name__)  
     @app.route("/",methods=["GET","POST"])  
     def index():  
         return ""  
     app.run()  
-# 2.Response三剑客
-HTTPResponse：return "先帝创业未半而中道崩殂"  
-render: return render_template("login.html")  
-redirect:return redirect("/login")  
-小儿子：  
-    return send_file() : return send_file("1.mp4") 打开并传输文件  
-    return jsonify() : return jsonify({"name":"JWB","age":73})  Content-Type: application/json  
-# 3.Flask中的Request公共变量？
-from flask import request  
-request.method 请求方式  
-request.form 存储的是所有FormData中的所有数据  
-request.args 存储的是所有URL中的所有数据  
-request.json Content-Type: application/json 存放在request.json中  
-request.data 当Content-Type无法被解析时，存放原始数据  
-request.url 请求地址  
-request.path url路由地址  
-request.host 主机地址  
-request.host_url 将主机地址转换为httpurl  
-# 4.Jinja2
-{{}} 引用或执行时  
-{%%} 逻辑代码  
-符合python用法  
-# 5.Session
-from flask import session  
-app.secret_key = "yinjiaodawangba"  
-Flask中的session是保存在 cookie 中的  
-session["user"] = "jwb"  
-session.get("user")  
-# 6.Flask 中的路由
+
+## 2.Response三剑客<span id="2">
+    HTTPResponse：return "先帝创业未半而中道崩殂"  
+    render: return render_template("login.html")  
+    redirect:return redirect("/login")  
+    小儿子：  
+        return send_file() : return send_file("1.mp4") 打开并传输文件  
+        return jsonify() : return jsonify({"name":"JWB","age":73})  Content-Type: application/json  
+
+## 3.Flask中的Request公共变量？<span id="3">
+    from flask import request  
+    request.method 请求方式  
+    request.form 存储的是所有FormData中的所有数据  
+    request.args 存储的是所有URL中的所有数据  
+    request.json Content-Type: application/json 存放在request.json中  
+    request.data 当Content-Type无法被解析时，存放原始数据  
+    request.url 请求地址  
+    request.path url路由地址  
+    request.host 主机地址  
+    request.host_url 将主机地址转换为httpurl  
+
+## 4.Jinja2<span id="4">
+    {{}} 引用或执行时  
+    {%%} 逻辑代码  
+    符合python用法  
+
+## 5.Session<span id="5">
+    from flask import session  
+    app.secret_key = "yinjiaodawangba"  
+    Flask中的session是保存在 cookie 中的  
+    session["user"] = "jwb"  
+    session.get("user")  
+
+## 6.Flask 中的路由<span id="6">
         *endpoint - url_for 反向地址  
         *endpoint 默认是视图函数名  
         *methods 指定视图函数的请求方式，默认GET  
@@ -44,29 +66,31 @@ session.get("user")
         *动态路由参数：  
         /<int:nid>  /<string:str> /<nid>   
         视图函数中需要有参数接收动态路由参数  
-        
-# 7.Flask中的实例化配置
-        *template_folder = "temp"  # template模板目录,   默认当前项目中的 templates 目录  
+
+## 7.Flask中的实例化配置<span id="7">
+        *template_folder = "temp"  ## template模板目录,   默认当前项目中的 templates 目录  
         *static_folder = "jingtaiwenjianmulu" 目录  
         *static_url_path = "/static" 访问路径  
         static_host =   
         
-        host_matching = False,  #   如果不是特别需要的话,慎用,否则所有的route 都需要host=""的参数  
-        subdomain_matching = False,  # 理论上来说是用来限制SERVER_  NAME子域名的,但是目前还没有感觉出来区别在哪里  
-        instance_path = None,  # 指向另一个Flask实例的路径  
-        instance_relative_config = False  # 是否加载另一个实例的配置  
-        root_path = None  # 主模块所在的目录的绝对路径,默认项目目录  
-        
-# 8.app对象配置
+        host_matching = False,  ##   如果不是特别需要的话,慎用,否则所有的route 都需要host=""的参数  
+        subdomain_matching = False,  ## 理论上来说是用来限制SERVER_  NAME子域名的,但是目前还没有感觉出来区别在哪里  
+        instance_path = None,  ## 指向另一个Flask实例的路径  
+        instance_relative_config = False  ## 是否加载另一个实例的配置  
+        root_path = None  ## 主模块所在的目录的绝对路径,默认项目目录  
+
+## 8.app对象配置<span id="8">
         app.config.from_object(Debug)  
         class Debug(object):  
             DEBUG=True  
-# 9.蓝图 Blueprint
+
+## 9.蓝图 Blueprint<span id="9">
         form flask import Blueprint  
         blue = Blueprint("blue_id",__name__,url_prefix)  
         url_prefix 前缀  
         app.register_blueprint(blue)  
-# 10.特殊装饰器：
+
+## 10.特殊装饰器：<span id="10">
         @app.template_global()  
         @app.template_filter()  
         
@@ -84,7 +108,8 @@ session.get("user")
         
         @app.errorhandler(404) 重定义页面  
         def error404(args):  
-# 11.CBV :
+
+## 11.CBV :<span id="11">
     from flask import views  
     
     class LoginView(views.MethodView):  
@@ -96,12 +121,14 @@ session.get("user")
             
     
     app.add_url_rule("/login",endpoint=None,view_func=LoginView.as_view("login"))  
-# 12.flash:
+
+## 12.flash:<span id="12">
     from flask import flash,get_flash_messages  
     
     flash("","tag")  
     get_flash_messages("tag")  
-# 13.Flask-Session
+
+## 13.Flask-Session<span id="13">
     from flask_session import Session  
     from flask import session  
     
@@ -111,14 +138,14 @@ session.get("user")
     
     session["user"] == "123"  
     session.get("user")  
-    
-# 14.WTForms - MoudelForm
+
+## 14.WTForms - MoudelForm<span id="14">
     from wtfroms.fields import simple,core  
     from wtfroms import Form,validators  
     
     class LoginForm(Form):  
         username = simple.StringFields(  
-            label = "" #看源码 __init__  
+            label = "" ##看源码 __init__  
         )  
         
     
@@ -135,6 +162,3 @@ session.get("user")
         render_template("html",lf=lf)  
     
     lf.data.get("username")  
-    
-# 15.DBUtils 数据库连接池
-    
