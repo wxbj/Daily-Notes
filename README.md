@@ -1,4 +1,7 @@
 # 学习笔记目录
-1. Git学习笔记
-2. Markdown学习笔记
-3. 心得
+1. 心得
+2. Markdown语法
+3. Git语法
+4. Windows快捷键
+5. Pycharm快捷键
+6. Falsk语法
