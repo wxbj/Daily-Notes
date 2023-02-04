@@ -5,3 +5,4 @@
 [4. Windows快捷键](https://github.com/wxbj/Daily-Notes/blob/main/Windows%E5%BF%AB%E6%8D%B7%E9%94%AE.md)  
 [5. Pycharm快捷键](https://github.com/wxbj/Daily-Notes/blob/main/Pycharm%E5%BF%AB%E6%8D%B7%E9%94%AE.md)  
 [6. Falsk语法](https://github.com/wxbj/Daily-Notes/blob/main/Flask%E8%AF%AD%E6%B3%95.md)  
+[7. 编码技巧]()
